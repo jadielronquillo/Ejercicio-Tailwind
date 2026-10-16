@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones y estados · Solución | Tailwind CSS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+</head>
+<body class="min-h-screen bg-slate-100 p-4 text-slate-900 sm:p-8 dark:bg-slate-950 dark:text-slate-100">
+  <main class="mx-auto max-w-5xl">
+    <a href="index.html" class="mb-6 inline-flex rounded-lg bg-slate-800 px-4 py-2 font-semibold text-white transition hover:bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">← Regresar al inicio</a>
+    <div class="flex flex-wrap gap-3">
+      <button type="button"
+        class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-800 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Guardar</button>
+      <button type="button"
+        class="rounded-lg border border-slate-500 px-5 py-2 hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-2">
+        Cancelar
+      </button>
+      <button type="button" disabled
+        class="rounded-lg bg-blue-700 px-5 py-2 text-white disabled:opacity-50 disabled:cursor-not-allowed">No disponible</button>
+    </div>
+  </main>
+</body>
+</html>
